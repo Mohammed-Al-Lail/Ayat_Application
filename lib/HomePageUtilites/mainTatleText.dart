@@ -12,15 +12,15 @@ class mainTitleText extends StatelessWidget {
                 margin: const EdgeInsets.all(15),
 
                 decoration: BoxDecoration(
-                  color: Colors.amber[100],
+                  color: Colors.amber[50],
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                   ),
                   border: Border.all(
               
-                    color: Colors.amber.shade600,
-                    width: 3
+                    color: Colors.black,
+                    width: 4
                   )
                 ),
               

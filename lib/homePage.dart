@@ -13,7 +13,7 @@ class homePage extends StatelessWidget {
 
     return Scaffold(
       
-      backgroundColor: Colors.blueGrey[200],
+      backgroundColor: Colors.black87,
 
       body:   SafeArea(
         
@@ -33,9 +33,25 @@ class homePage extends StatelessWidget {
                     ),
                     border: Border.all(
                 
-                      color: Colors.white,
-                      width: 3
-                    )
+                      color: Colors.white38,
+                      width: 5
+                    ),
+
+                    gradient: const LinearGradient(
+                      colors: [
+                        Colors.black,
+                        Colors.amber,
+                        Colors.black,
+                      ],
+                      stops: [
+                        0.2,
+                        0.5,
+                        0.8
+                      ],
+
+                      begin: Alignment.topRight,
+                      end: Alignment.bottomLeft
+                      ),
                   ),
           
           
@@ -52,22 +68,23 @@ class homePage extends StatelessWidget {
             
             
             // Al Aya Text
-              Text(
+              const Text(
                 "الْآيَةُ",
                 style: TextStyle(
-                  color: Colors.amber[100],
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.w900
                           
                 ),
               ),
               const SizedBox(height: 20,),
 
             // Al basmallah Text
-              Text(
+              const Text(
                 "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ",
                 style: TextStyle(
-                  color: Colors.grey[100],
+                  color: Colors.black,
+                  fontWeight: FontWeight.w900
 
                 ),
               ),

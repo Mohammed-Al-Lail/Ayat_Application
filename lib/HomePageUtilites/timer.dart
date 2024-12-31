@@ -11,7 +11,7 @@ class myTimer extends StatefulWidget {
 class _myTimer extends State<myTimer> {
 
   late Timer _timer;
-  int _totalSeconds = 120; // Set your countdown time in seconds (43200 seconds = 12 hour)
+  int _totalSeconds = 20; // Set your countdown time in seconds (43200 seconds = 12 hour)
 
   void startTimer() {
 
@@ -29,7 +29,7 @@ class _myTimer extends State<myTimer> {
         Provider.of<AyaProvider>(context,listen: false).updateRandomIndex(); // update the random index from Ayaprovider
 
         setState(() {
-          _totalSeconds=120; // to restart The timer
+          _totalSeconds=20; // to restart The timer
         });
       }
     });
@@ -66,15 +66,15 @@ class _myTimer extends State<myTimer> {
             Text(
               "الوقت المتبقي لتحديث الْآيَةُ",
               style: TextStyle(
-                color: Colors.grey[200],
-                fontSize: 14,
+                color: Colors.grey[300],
+                fontSize: 11,
                 fontWeight: FontWeight.w900
               ),
             ),
             
             Text(
               formatTime(_totalSeconds),
-              style: const TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 48, fontWeight: FontWeight.bold,color: Colors.white),
             ),
           ],
         ),

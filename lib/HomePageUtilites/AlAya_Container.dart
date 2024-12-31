@@ -104,9 +104,13 @@ class _AlAyaContainerState extends State<AlAyaContainer> {
             padding: const EdgeInsets.all(25),
             margin: const EdgeInsets.all(10),
             
-            decoration: const BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.all(Radius.circular(20))
+            decoration:  BoxDecoration(
+              color: Colors.blue[100],
+              border: Border.all(
+                color: Colors.black,
+                width: 4
+              ),
+              borderRadius: const BorderRadius.all(Radius.circular(20))
             ),
 
             child: Center(
@@ -114,7 +118,7 @@ class _AlAyaContainerState extends State<AlAyaContainer> {
                 widget.aya.aya,
                 style: TextStyle(
                   fontSize: 22,
-                  color: Colors.green[800],
+                  color: Colors.green[900],
                   fontWeight: FontWeight.bold
                 ),
               ),
@@ -127,7 +131,7 @@ class _AlAyaContainerState extends State<AlAyaContainer> {
               "${widget.aya.sourahName} [${widget.aya.AyaNumber}]",
               style: const TextStyle(
                 color: Colors.black,
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: FontWeight.w900
               ),
             ),
@@ -145,8 +149,8 @@ class _AlAyaContainerState extends State<AlAyaContainer> {
                     ElevatedButton(
                       onPressed: widget.aya.playAudio,
 
-                      style: const ButtonStyle(
-                        backgroundColor: WidgetStatePropertyAll(Colors.amber)
+                      style:  ButtonStyle(
+                        backgroundColor: WidgetStatePropertyAll(Colors.red[800])
                       ), 
 
                       child: const Text(
@@ -163,8 +167,8 @@ class _AlAyaContainerState extends State<AlAyaContainer> {
                     ElevatedButton(
                       onPressed: _showTafseerDialog,
 
-                      style: const ButtonStyle(
-                        backgroundColor: WidgetStatePropertyAll(Colors.amber)
+                      style:  ButtonStyle(
+                        backgroundColor: WidgetStatePropertyAll(Colors.red[800])
                       ),  
                       child: const Text(
                         "التفسير",
